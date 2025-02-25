@@ -1,11 +1,4 @@
-
-
-
-
-
-
-
-
+https://github.com/user-attachments/assets/da91fe4f-9d50-4d96-bd07-d007ca6cc5bd
 
 🎯 구현 기능
 
@@ -65,4 +58,3 @@ Delete: 나의 결과 삭제 기능
  ┣ 📜vite.config.js
  ┗ 📜yarn.lock
 ```
-
