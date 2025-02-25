@@ -8,6 +8,7 @@
 
 
 🎯 구현 기능
+
 ✅ zustand를 활용한 user 상태 관리
 
 ✅ tanStack query를 활용하여 mbti 테스트 CRUD 관리
