@@ -18,6 +18,22 @@ export const createTestResult = async (resultData) => {
   }
 };
 
-export const deleteTestResult = async (id) => {};
+export const deleteTestResult = async (id) => {
+  try {
+    const response = await jsonAPI.delete(`/testResults/${id}`);
+    return response.data;
+  } catch (error) {
+    console.error("테스트 결과 삭제 중 오류 발생:", error);
+    throw error;
+  }
+};
 
-export const updateTestResultVisibility = async (id, visibility) => {};
+export const updateTestResultVisibility = async (id, visibility) => {
+  try {
+    const response = await jsonAPI.patch(`/testResults/${id}`, { visibility });
+    return response.data;
+  } catch (error) {
+    console.error("공개 여부 변경 중 오류 발생:", error);
+    throw error;
+  }
+};

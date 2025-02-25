@@ -1,10 +1,17 @@
 import React from "react";
-import { useQuery, useQueryClient } from "@tanstack/react-query";
-import { getTestResults } from "../api/testResults";
-import { useMutation } from "@tanstack/react-query";
+import { useQuery, useQueryClient, useMutation } from "@tanstack/react-query";
+import {
+  getTestResults,
+  updateTestResultVisibility,
+  deleteTestResult,
+} from "../api/testResults";
 
 const TestResultPage = () => {
   const queryClient = useQueryClient();
+
+  const QUERY_KEY = {
+    MBTI: "testResults",
+  };
 
   const {
     data: testResult = [],
